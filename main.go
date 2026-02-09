@@ -233,7 +233,7 @@ func addClientToPanel(email, clientUUID string) error {
 	// 1. Формируем структуру клиента
 	clientSettings := ClientSettings{
 		ID:         clientUUID,
-		Flow:       "xtls-rprx-vision", // оставляем пустым для VLESS
+		Flow:       "xtls-rprx-vision-udp443", // оставляем пустым для VLESS
 		Email:      email,
 		LimitIP:    0,    // без ограничения по IP
 		TotalGB:    0,    // без лимита трафика
